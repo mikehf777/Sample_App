@@ -1,0 +1,17 @@
+<%= form_for :session, :url=> sessions_path , :class => "form-horizontal" do |f| %>
+	<div class="control-group">
+		<%= f.label :email ,  :class => "control-label"  %>
+		<div class="controls">
+		<%= f.text_field :email ,  :class => "input-xlarge"  %>	
+		</div>
+		<%= f.label :password ,  :class => "control-label"  %>
+		<div class="controls">
+		<%= f.password_field :password ,  :class => "input-xlarge"  %>	
+		</div>
+		<div class="controls">
+			<%= f.submit "Sign In" , :class => 'btn btn-danger' %>
+		</div>
+		
+	</div>
+	<% end %>
+<p>Nuevo Usuario ? <%= link_to "Registrate ahora!" , signup_path%></p>

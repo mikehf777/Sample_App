@@ -1,0 +1,14 @@
+<table class="table table-striped">
+ <tr>
+ 	<td>
+		<h1>
+			<%= gravatar_for @user %>
+			<%= @user.name %>
+		</h1>
+	</td>
+	<td>
+		<strong>Nombre</strong> <%= @user.name %><br />
+		<strong>URL</strong> <%= link_to user_path(@user),@user%><br />
+	</td>
+ </tr>
+</table>
